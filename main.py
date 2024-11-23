@@ -38,10 +38,11 @@ def main():
 
        
         screen.fill((0,0,0))
-        drawable.draw(screen)
+        for obj in drawable:
+            obj.draw(screen)
         pygame.display.flip()
 
-        
+
         dt = clock.tick(60) / 1000
           
        
